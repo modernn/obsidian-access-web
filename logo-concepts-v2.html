@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obsidian Access - Logo Concepts V2</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #09090b;
+            color: #e4e4e7;
+            min-height: 100vh;
+            padding: 40px;
+        }
+        h1 { 
+            font-size: 14px; 
+            letter-spacing: 0.2em; 
+            text-transform: uppercase;
+            color: #71717a;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 11px;
+            color: #52525b;
+            margin-bottom: 40px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            max-width: 1400px;
+        }
+        .concept {
+            background: #18181b;
+            border: 1px solid #27272a;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .concept.featured {
+            border-color: #3f3f46;
+            background: linear-gradient(145deg, #1c1c1f 0%, #141416 100%);
+        }
+        .concept h2 {
+            font-size: 11px;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: #52525b;
+            margin-bottom: 30px;
+        }
+        .logo-container {
+            width: 160px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .logo-container svg {
+            width: 100%;
+            height: 100%;
+        }
+        .description {
+            font-size: 12px;
+            color: #71717a;
+            text-align: center;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .variants {
+            display: flex;
+            gap: 20px;
+            width: 100%;
+            justify-content: center;
+        }
+        .variant {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .variant.dark {
+            background: #09090b;
+        }
+        .variant.light {
+            background: #fafafa;
+        }
+        .variant svg {
+            width: 80px;
+            height: 50px;
+        }
+        .tag {
+            font-size: 9px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #3f3f46;
+            background: #27272a;
+            padding: 4px 8px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Obsidian Access — Logo Concepts V2</h1>
+    <p class="subtitle">Inspired by: Geometric slashed O + The OA monumental letterforms + Shield security</p>
+    
+    <div class="grid">
+        
+        <!-- Concept A: The OA style - O and angular A side by side -->
+        <div class="concept featured">
+            <span class="tag">Recommended</span>
+            <h2>Concept A — Monumental OA</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 180 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- O - perfect circle ring -->
+                    <circle cx="40" cy="40" r="32" stroke="#e4e4e7" stroke-width="6" fill="none"/>
+                    <!-- A - sharp angular -->
+                    <path d="M100 72L130 8L160 72" stroke="#e4e4e7" stroke-width="6" fill="none" stroke-linejoin="miter"/>
+                    <!-- A crossbar -->
+                    <path d="M108 55H152" stroke="#e4e4e7" stroke-width="6"/>
+                </svg>
+            </div>
+            <p class="description">Direct The OA inspiration. Monumental, stark, timeless. The O as protection, the A as access.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 180 80" fill="none">
+                        <circle cx="40" cy="40" r="32" stroke="#e4e4e7" stroke-width="6" fill="none"/>
+                        <path d="M100 72L130 8L160 72" stroke="#e4e4e7" stroke-width="6" fill="none" stroke-linejoin="miter"/>
+                        <path d="M108 55H152" stroke="#e4e4e7" stroke-width="6"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 180 80" fill="none">
+                        <circle cx="40" cy="40" r="32" stroke="#18181b" stroke-width="6" fill="none"/>
+                        <path d="M100 72L130 8L160 72" stroke="#18181b" stroke-width="6" fill="none" stroke-linejoin="miter"/>
+                        <path d="M108 55H152" stroke="#18181b" stroke-width="6"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Concept B: O with slash, A separate -->
+        <div class="concept">
+            <h2>Concept B — Slashed O + A</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 180 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- O ring -->
+                    <circle cx="40" cy="40" r="30" stroke="#e4e4e7" stroke-width="6" fill="none"/>
+                    <!-- Slash through O -->
+                    <path d="M18 62L62 18" stroke="#e4e4e7" stroke-width="8" stroke-linecap="square"/>
+                    <!-- A -->
+                    <path d="M105 72L130 12L155 72" stroke="#e4e4e7" stroke-width="6" fill="none" stroke-linejoin="miter"/>
+                    <path d="M112 55H148" stroke="#e4e4e7" stroke-width="5"/>
+                </svg>
+            </div>
+            <p class="description">Combines both references. Slashed O (first image) with angular A (The OA).</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 180 80" fill="none">
+                        <circle cx="40" cy="40" r="30" stroke="#e4e4e7" stroke-width="6" fill="none"/>
+                        <path d="M18 62L62 18" stroke="#e4e4e7" stroke-width="8" stroke-linecap="square"/>
+                        <path d="M105 72L130 12L155 72" stroke="#e4e4e7" stroke-width="6" fill="none" stroke-linejoin="miter"/>
+                        <path d="M112 55H148" stroke="#e4e4e7" stroke-width="5"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 180 80" fill="none">
+                        <circle cx="40" cy="40" r="30" stroke="#18181b" stroke-width="6" fill="none"/>
+                        <path d="M18 62L62 18" stroke="#18181b" stroke-width="8" stroke-linecap="square"/>
+                        <path d="M105 72L130 12L155 72" stroke="#18181b" stroke-width="6" fill="none" stroke-linejoin="miter"/>
+                        <path d="M112 55H148" stroke="#18181b" stroke-width="5"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Concept C: Filled O, outlined A -->
+        <div class="concept">
+            <h2>Concept C — Solid O + Open A</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 180 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Solid O ring -->
+                    <circle cx="40" cy="40" r="32" fill="#27272a"/>
+                    <circle cx="40" cy="40" r="20" fill="#09090b"/>
+                    <!-- Open A frame -->
+                    <path d="M100 72L130 8L160 72" stroke="#e4e4e7" stroke-width="5" fill="none" stroke-linejoin="miter"/>
+                </svg>
+            </div>
+            <p class="description">Solid O as obsidian stone, open A for access. No crossbar — cleaner.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 180 80" fill="none">
+                        <circle cx="40" cy="40" r="32" fill="#27272a"/>
+                        <circle cx="40" cy="40" r="20" fill="#09090b"/>
+                        <path d="M100 72L130 8L160 72" stroke="#e4e4e7" stroke-width="5" fill="none" stroke-linejoin="miter"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 180 80" fill="none">
+                        <circle cx="40" cy="40" r="32" fill="#27272a"/>
+                        <circle cx="40" cy="40" r="20" fill="#fafafa"/>
+                        <path d="M100 72L130 8L160 72" stroke="#18181b" stroke-width="5" fill="none" stroke-linejoin="miter"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Concept D: Interlocked OA -->
+        <div class="concept featured">
+            <span class="tag">Bold</span>
+            <h2>Concept D — Interlocked OA</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 160 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- A in back -->
+                    <path d="M60 75L95 5L130 75" stroke="#3f3f46" stroke-width="8" fill="none" stroke-linejoin="miter"/>
+                    <path d="M70 55H120" stroke="#3f3f46" stroke-width="6"/>
+                    <!-- O overlapping -->
+                    <circle cx="50" cy="45" r="30" stroke="#e4e4e7" stroke-width="6" fill="none"/>
+                </svg>
+            </div>
+            <p class="description">O and A physically interlocked. Unity of protection and access.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 160 80" fill="none">
+                        <path d="M60 75L95 5L130 75" stroke="#3f3f46" stroke-width="8" fill="none" stroke-linejoin="miter"/>
+                        <path d="M70 55H120" stroke="#3f3f46" stroke-width="6"/>
+                        <circle cx="50" cy="45" r="30" stroke="#e4e4e7" stroke-width="6" fill="none"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 160 80" fill="none">
+                        <path d="M60 75L95 5L130 75" stroke="#a1a1aa" stroke-width="8" fill="none" stroke-linejoin="miter"/>
+                        <path d="M70 55H120" stroke="#a1a1aa" stroke-width="6"/>
+                        <circle cx="50" cy="45" r="30" stroke="#18181b" stroke-width="6" fill="none"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Concept E: Shield-shaped O -->
+        <div class="concept">
+            <h2>Concept E — Shield O + A</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 180 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Shield-shaped O -->
+                    <path d="M40 8L15 18V45C15 60 25 72 40 76C55 72 65 60 65 45V18L40 8Z" stroke="#e4e4e7" stroke-width="5" fill="none"/>
+                    <!-- A -->
+                    <path d="M100 72L130 8L160 72" stroke="#e4e4e7" stroke-width="5" fill="none" stroke-linejoin="miter"/>
+                    <path d="M110 52H150" stroke="#e4e4e7" stroke-width="5"/>
+                </svg>
+            </div>
+            <p class="description">The O becomes a shield shape. Direct security reference + angular A.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 180 80" fill="none">
+                        <path d="M40 8L15 18V45C15 60 25 72 40 76C55 72 65 60 65 45V18L40 8Z" stroke="#e4e4e7" stroke-width="5" fill="none"/>
+                        <path d="M100 72L130 8L160 72" stroke="#e4e4e7" stroke-width="5" fill="none" stroke-linejoin="miter"/>
+                        <path d="M110 52H150" stroke="#e4e4e7" stroke-width="5"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 180 80" fill="none">
+                        <path d="M40 8L15 18V45C15 60 25 72 40 76C55 72 65 60 65 45V18L40 8Z" stroke="#18181b" stroke-width="5" fill="none"/>
+                        <path d="M100 72L130 8L160 72" stroke="#18181b" stroke-width="5" fill="none" stroke-linejoin="miter"/>
+                        <path d="M110 52H150" stroke="#18181b" stroke-width="5"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Concept F: Minimal with slash through both -->
+        <div class="concept">
+            <h2>Concept F — Unified Slash</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 180 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- O -->
+                    <circle cx="40" cy="40" r="28" stroke="#e4e4e7" stroke-width="5" fill="none"/>
+                    <!-- A -->
+                    <path d="M100 72L125 12L150 72" stroke="#e4e4e7" stroke-width="5" fill="none" stroke-linejoin="miter"/>
+                    <path d="M108 52H142" stroke="#e4e4e7" stroke-width="4"/>
+                    <!-- Single slash through both -->
+                    <path d="M10 70L170 10" stroke="#e4e4e7" stroke-width="6" stroke-linecap="square"/>
+                </svg>
+            </div>
+            <p class="description">Single diagonal slash unifies both letters. Bold statement.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 180 80" fill="none">
+                        <circle cx="40" cy="40" r="28" stroke="#e4e4e7" stroke-width="5" fill="none"/>
+                        <path d="M100 72L125 12L150 72" stroke="#e4e4e7" stroke-width="5" fill="none" stroke-linejoin="miter"/>
+                        <path d="M108 52H142" stroke="#e4e4e7" stroke-width="4"/>
+                        <path d="M10 70L170 10" stroke="#e4e4e7" stroke-width="6" stroke-linecap="square"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 180 80" fill="none">
+                        <circle cx="40" cy="40" r="28" stroke="#18181b" stroke-width="5" fill="none"/>
+                        <path d="M100 72L125 12L150 72" stroke="#18181b" stroke-width="5" fill="none" stroke-linejoin="miter"/>
+                        <path d="M108 52H142" stroke="#18181b" stroke-width="4"/>
+                        <path d="M10 70L170 10" stroke="#18181b" stroke-width="6" stroke-linecap="square"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Concept G: Heavy weight, filled -->
+        <div class="concept featured">
+            <span class="tag">Heaviest</span>
+            <h2>Concept G — Solid Heavy</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 180 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Thick O ring -->
+                    <circle cx="40" cy="40" r="32" fill="#e4e4e7"/>
+                    <circle cx="40" cy="40" r="16" fill="#09090b"/>
+                    <!-- Thick A -->
+                    <path d="M95 72L125 8L155 72H140L135 60H115L110 72H95Z" fill="#e4e4e7"/>
+                    <path d="M120 48L125 32L130 48H120Z" fill="#09090b"/>
+                </svg>
+            </div>
+            <p class="description">Maximum presence. Heavy, confident, unmistakable.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 180 80" fill="none">
+                        <circle cx="40" cy="40" r="32" fill="#e4e4e7"/>
+                        <circle cx="40" cy="40" r="16" fill="#09090b"/>
+                        <path d="M95 72L125 8L155 72H140L135 60H115L110 72H95Z" fill="#e4e4e7"/>
+                        <path d="M120 48L125 32L130 48H120Z" fill="#09090b"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 180 80" fill="none">
+                        <circle cx="40" cy="40" r="32" fill="#18181b"/>
+                        <circle cx="40" cy="40" r="16" fill="#fafafa"/>
+                        <path d="M95 72L125 8L155 72H140L135 60H115L110 72H95Z" fill="#18181b"/>
+                        <path d="M120 48L125 32L130 48H120Z" fill="#fafafa"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Concept H: A as door/gateway -->
+        <div class="concept">
+            <h2>Concept H — O + Gateway A</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 180 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- O ring -->
+                    <circle cx="40" cy="40" r="30" stroke="#e4e4e7" stroke-width="6" fill="none"/>
+                    <!-- A as gateway/door frame -->
+                    <path d="M100 72V20L130 5L160 20V72" stroke="#e4e4e7" stroke-width="5" fill="none" stroke-linejoin="miter"/>
+                    <!-- Door opening -->
+                    <path d="M115 72V35H145V72" stroke="#3f3f46" stroke-width="3" fill="none"/>
+                </svg>
+            </div>
+            <p class="description">The A becomes a gateway/door frame. Access as entry point.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 180 80" fill="none">
+                        <circle cx="40" cy="40" r="30" stroke="#e4e4e7" stroke-width="6" fill="none"/>
+                        <path d="M100 72V20L130 5L160 20V72" stroke="#e4e4e7" stroke-width="5" fill="none" stroke-linejoin="miter"/>
+                        <path d="M115 72V35H145V72" stroke="#3f3f46" stroke-width="3" fill="none"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 180 80" fill="none">
+                        <circle cx="40" cy="40" r="30" stroke="#18181b" stroke-width="6" fill="none"/>
+                        <path d="M100 72V20L130 5L160 20V72" stroke="#18181b" stroke-width="5" fill="none" stroke-linejoin="miter"/>
+                        <path d="M115 72V35H145V72" stroke="#71717a" stroke-width="3" fill="none"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
