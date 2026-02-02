@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obsidian Access - Logo Concepts V3</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #09090b;
+            color: #e4e4e7;
+            min-height: 100vh;
+            padding: 40px;
+        }
+        h1 { 
+            font-size: 14px; 
+            letter-spacing: 0.2em; 
+            text-transform: uppercase;
+            color: #71717a;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 11px;
+            color: #52525b;
+            margin-bottom: 40px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1400px;
+        }
+        .concept {
+            background: #18181b;
+            border: 1px solid #27272a;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .concept.featured {
+            border-color: #52525b;
+            background: linear-gradient(145deg, #1c1c1f 0%, #141416 100%);
+        }
+        .concept h2 {
+            font-size: 11px;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: #52525b;
+            margin-bottom: 30px;
+        }
+        .logo-container {
+            width: 140px;
+            height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .logo-container svg {
+            width: 100%;
+            height: 100%;
+        }
+        .description {
+            font-size: 12px;
+            color: #71717a;
+            text-align: center;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .variants {
+            display: flex;
+            gap: 15px;
+            width: 100%;
+            justify-content: center;
+        }
+        .variant {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .variant.dark {
+            background: #09090b;
+        }
+        .variant.light {
+            background: #fafafa;
+        }
+        .variant svg {
+            width: 60px;
+            height: 60px;
+        }
+        .tag {
+            font-size: 9px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #e4e4e7;
+            background: #3f3f46;
+            padding: 4px 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Obsidian Access — Logo Concepts V3</h1>
+    <p class="subtitle">Direction: The A IS the shield. O incorporated as element.</p>
+    
+    <div class="grid">
+        
+        <!-- Concept 1: A as shield, O inside -->
+        <div class="concept featured">
+            <span class="tag">Core Concept</span>
+            <h2>01 — A-Shield with O Core</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- A as shield shape -->
+                    <path d="M50 5L10 115H30L50 55L70 115H90L50 5Z" fill="#27272a"/>
+                    <!-- O as core/center -->
+                    <circle cx="50" cy="70" r="15" fill="#09090b" stroke="#52525b" stroke-width="2"/>
+                </svg>
+            </div>
+            <p class="description">The A forms the protective shield. O sits at the core — the access point.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 100 120" fill="none">
+                        <path d="M50 5L10 115H30L50 55L70 115H90L50 5Z" fill="#e4e4e7"/>
+                        <circle cx="50" cy="70" r="15" fill="#09090b"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 100 120" fill="none">
+                        <path d="M50 5L10 115H30L50 55L70 115H90L50 5Z" fill="#18181b"/>
+                        <circle cx="50" cy="70" r="15" fill="#fafafa"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Concept 2: Outlined A-shield, O ring -->
+        <div class="concept">
+            <h2>02 — Open A-Shield + O Ring</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- A outline as shield -->
+                    <path d="M50 8L15 112H35L50 65L65 112H85L50 8Z" stroke="#e4e4e7" stroke-width="5" fill="none" stroke-linejoin="miter"/>
+                    <!-- O ring at center -->
+                    <circle cx="50" cy="72" r="12" stroke="#e4e4e7" stroke-width="4" fill="none"/>
+                </svg>
+            </div>
+            <p class="description">Both letters as outlines. Lighter, more refined.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 100 120" fill="none">
+                        <path d="M50 8L15 112H35L50 65L65 112H85L50 8Z" stroke="#e4e4e7" stroke-width="5" fill="none" stroke-linejoin="miter"/>
+                        <circle cx="50" cy="72" r="12" stroke="#e4e4e7" stroke-width="4" fill="none"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 100 120" fill="none">
+                        <path d="M50 8L15 112H35L50 65L65 112H85L50 8Z" stroke="#18181b" stroke-width="5" fill="none" stroke-linejoin="miter"/>
+                        <circle cx="50" cy="72" r="12" stroke="#18181b" stroke-width="4" fill="none"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Concept 3: A shield with O as keyhole -->
+        <div class="concept featured">
+            <span class="tag">Security Focus</span>
+            <h2>03 — A-Shield + O Keyhole</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Solid A shield -->
+                    <path d="M50 5L8 115H35L50 70L65 115H92L50 5Z" fill="#27272a"/>
+                    <!-- O as keyhole top -->
+                    <circle cx="50" cy="55" r="12" fill="#09090b"/>
+                    <!-- Keyhole bottom -->
+                    <path d="M44 55L44 85L56 85L56 55" fill="#09090b"/>
+                </svg>
+            </div>
+            <p class="description">The O becomes a keyhole within the A-shield. Direct lock/access symbolism.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 100 120" fill="none">
+                        <path d="M50 5L8 115H35L50 70L65 115H92L50 5Z" fill="#e4e4e7"/>
+                        <circle cx="50" cy="55" r="12" fill="#09090b"/>
+                        <path d="M44 55L44 85L56 85L56 55" fill="#09090b"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 100 120" fill="none">
+                        <path d="M50 5L8 115H35L50 70L65 115H92L50 5Z" fill="#18181b"/>
+                        <circle cx="50" cy="55" r="12" fill="#fafafa"/>
+                        <path d="M44 55L44 85L56 85L56 55" fill="#fafafa"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Concept 4: A with O at apex -->
+        <div class="concept">
+            <h2>04 — A-Shield + O Crown</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- A body -->
+                    <path d="M50 30L12 115H38L50 80L62 115H88L50 30Z" fill="#27272a"/>
+                    <!-- O at the top/apex -->
+                    <circle cx="50" cy="20" r="14" fill="#27272a"/>
+                    <circle cx="50" cy="20" r="7" fill="#09090b"/>
+                </svg>
+            </div>
+            <p class="description">O sits at the apex like a crown or watchtower. Surveilling from above.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 100 120" fill="none">
+                        <path d="M50 30L12 115H38L50 80L62 115H88L50 30Z" fill="#e4e4e7"/>
+                        <circle cx="50" cy="20" r="14" fill="#e4e4e7"/>
+                        <circle cx="50" cy="20" r="7" fill="#09090b"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 100 120" fill="none">
+                        <path d="M50 30L12 115H38L50 80L62 115H88L50 30Z" fill="#18181b"/>
+                        <circle cx="50" cy="20" r="14" fill="#18181b"/>
+                        <circle cx="50" cy="20" r="7" fill="#fafafa"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Concept 5: Negative space A in O -->
+        <div class="concept">
+            <h2>05 — O Contains A</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Large O -->
+                    <circle cx="50" cy="50" r="45" fill="#27272a"/>
+                    <!-- A cut out / negative space -->
+                    <path d="M50 15L25 85H38L50 52L62 85H75L50 15Z" fill="#09090b"/>
+                </svg>
+            </div>
+            <p class="description">O encompasses all. A carved into it as negative space.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 100 100" fill="none">
+                        <circle cx="50" cy="50" r="45" fill="#e4e4e7"/>
+                        <path d="M50 15L25 85H38L50 52L62 85H75L50 15Z" fill="#09090b"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 100 100" fill="none">
+                        <circle cx="50" cy="50" r="45" fill="#18181b"/>
+                        <path d="M50 15L25 85H38L50 52L62 85H75L50 15Z" fill="#fafafa"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Concept 6: A with diagonal slash + O -->
+        <div class="concept featured">
+            <span class="tag">Combines All</span>
+            <h2>06 — Slashed A-Shield + O</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- A shield -->
+                    <path d="M50 5L10 115H32L50 60L68 115H90L50 5Z" fill="#27272a"/>
+                    <!-- Diagonal slash through -->
+                    <path d="M25 100L75 20" stroke="#09090b" stroke-width="10" stroke-linecap="square"/>
+                    <path d="M27 97L73 23" stroke="#3f3f46" stroke-width="2"/>
+                    <!-- Small O in upper right -->
+                    <circle cx="72" cy="35" r="10" stroke="#e4e4e7" stroke-width="3" fill="none"/>
+                </svg>
+            </div>
+            <p class="description">A as shield with slash (from reference). O positioned alongside.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 100 120" fill="none">
+                        <path d="M50 5L10 115H32L50 60L68 115H90L50 5Z" fill="#e4e4e7"/>
+                        <path d="M25 100L75 20" stroke="#09090b" stroke-width="10" stroke-linecap="square"/>
+                        <circle cx="72" cy="35" r="10" stroke="#e4e4e7" stroke-width="3" fill="none"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 100 120" fill="none">
+                        <path d="M50 5L10 115H32L50 60L68 115H90L50 5Z" fill="#18181b"/>
+                        <path d="M25 100L75 20" stroke="#fafafa" stroke-width="10" stroke-linecap="square"/>
+                        <circle cx="72" cy="35" r="10" stroke="#18181b" stroke-width="3" fill="none"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Concept 7: Monolithic A only -->
+        <div class="concept">
+            <h2>07 — Monolith A (O implied)</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Single massive A -->
+                    <path d="M50 5L5 115H25L35 90H65L75 115H95L50 5Z" fill="#27272a"/>
+                    <!-- Small inner triangle (implies O/hole) -->
+                    <path d="M50 45L40 70H60L50 45Z" fill="#09090b"/>
+                </svg>
+            </div>
+            <p class="description">Just the A. The triangle cutout implies the O. Maximum simplicity.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 100 120" fill="none">
+                        <path d="M50 5L5 115H25L35 90H65L75 115H95L50 5Z" fill="#e4e4e7"/>
+                        <path d="M50 45L40 70H60L50 45Z" fill="#09090b"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 100 120" fill="none">
+                        <path d="M50 5L5 115H25L35 90H65L75 115H95L50 5Z" fill="#18181b"/>
+                        <path d="M50 45L40 70H60L50 45Z" fill="#fafafa"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Concept 8: Faceted A-shield -->
+        <div class="concept featured">
+            <span class="tag">Obsidian</span>
+            <h2>08 — Faceted Obsidian A</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Left facet -->
+                    <path d="M50 5L10 115H50V5Z" fill="#18181b"/>
+                    <!-- Right facet -->
+                    <path d="M50 5L90 115H50V5Z" fill="#27272a"/>
+                    <!-- Inner left -->
+                    <path d="M50 50L32 90H50V50Z" fill="#27272a"/>
+                    <!-- Inner right -->
+                    <path d="M50 50L68 90H50V50Z" fill="#3f3f46"/>
+                    <!-- Center line accent -->
+                    <path d="M50 5V115" stroke="#52525b" stroke-width="1"/>
+                </svg>
+            </div>
+            <p class="description">The A with obsidian-like facets. Light plays across the surface. Volcanic glass.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 100 120" fill="none">
+                        <path d="M50 5L10 115H50V5Z" fill="#a1a1aa"/>
+                        <path d="M50 5L90 115H50V5Z" fill="#e4e4e7"/>
+                        <path d="M50 50L32 90H50V50Z" fill="#e4e4e7"/>
+                        <path d="M50 50L68 90H50V50Z" fill="#fafafa"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 100 120" fill="none">
+                        <path d="M50 5L10 115H50V5Z" fill="#18181b"/>
+                        <path d="M50 5L90 115H50V5Z" fill="#27272a"/>
+                        <path d="M50 50L32 90H50V50Z" fill="#27272a"/>
+                        <path d="M50 50L68 90H50V50Z" fill="#3f3f46"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Concept 9: A-frame with O lock -->
+        <div class="concept">
+            <h2>09 — A-Frame + O Lock</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- A as structural frame -->
+                    <path d="M50 5L10 115" stroke="#e4e4e7" stroke-width="8" stroke-linecap="square"/>
+                    <path d="M50 5L90 115" stroke="#e4e4e7" stroke-width="8" stroke-linecap="square"/>
+                    <path d="M25 75H75" stroke="#e4e4e7" stroke-width="6"/>
+                    <!-- O as padlock -->
+                    <circle cx="50" cy="50" r="15" stroke="#e4e4e7" stroke-width="4" fill="none"/>
+                    <rect x="40" y="55" width="20" height="18" fill="#e4e4e7"/>
+                </svg>
+            </div>
+            <p class="description">A as open frame structure, O rendered as a padlock hanging within.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 100 120" fill="none">
+                        <path d="M50 5L10 115" stroke="#e4e4e7" stroke-width="8" stroke-linecap="square"/>
+                        <path d="M50 5L90 115" stroke="#e4e4e7" stroke-width="8" stroke-linecap="square"/>
+                        <path d="M25 75H75" stroke="#e4e4e7" stroke-width="6"/>
+                        <circle cx="50" cy="50" r="15" stroke="#e4e4e7" stroke-width="4" fill="none"/>
+                        <rect x="40" y="55" width="20" height="18" fill="#e4e4e7"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 100 120" fill="none">
+                        <path d="M50 5L10 115" stroke="#18181b" stroke-width="8" stroke-linecap="square"/>
+                        <path d="M50 5L90 115" stroke="#18181b" stroke-width="8" stroke-linecap="square"/>
+                        <path d="M25 75H75" stroke="#18181b" stroke-width="6"/>
+                        <circle cx="50" cy="50" r="15" stroke="#18181b" stroke-width="4" fill="none"/>
+                        <rect x="40" y="55" width="20" height="18" fill="#18181b"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Concept 10: Minimal angular A -->
+        <div class="concept">
+            <h2>10 — Razor A</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Ultra sharp A -->
+                    <path d="M50 0L0 120H18L50 40L82 120H100L50 0Z" fill="#27272a"/>
+                </svg>
+            </div>
+            <p class="description">Razor sharp. No crossbar, no O. Pure form. The absence is the statement.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 100 120" fill="none">
+                        <path d="M50 0L0 120H18L50 40L82 120H100L50 0Z" fill="#e4e4e7"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 100 120" fill="none">
+                        <path d="M50 0L0 120H18L50 40L82 120H100L50 0Z" fill="#18181b"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
