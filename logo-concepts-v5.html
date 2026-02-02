@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obsidian Access - OA Logo V5</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #09090b;
+            color: #e4e4e7;
+            min-height: 100vh;
+            padding: 40px;
+        }
+        h1 { 
+            font-size: 14px; 
+            letter-spacing: 0.2em; 
+            text-transform: uppercase;
+            color: #71717a;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 11px;
+            color: #52525b;
+            margin-bottom: 40px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            max-width: 1400px;
+        }
+        .concept {
+            background: #18181b;
+            border: 1px solid #27272a;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .concept.featured {
+            border-color: #52525b;
+            background: linear-gradient(145deg, #1f1f23 0%, #141416 100%);
+        }
+        .concept h2 {
+            font-size: 11px;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: #52525b;
+            margin-bottom: 24px;
+        }
+        .logo-container {
+            width: 140px;
+            height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .logo-container svg {
+            width: 100%;
+            height: 100%;
+        }
+        .description {
+            font-size: 12px;
+            color: #71717a;
+            text-align: center;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .variants {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+        }
+        .variant {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .variant.dark { background: #09090b; }
+        .variant.light { background: #fafafa; }
+        .variant svg {
+            width: 70px;
+            height: 70px;
+        }
+        .tag {
+            font-size: 9px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #e4e4e7;
+            background: #3f3f46;
+            padding: 4px 10px;
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>OA — Obsidian Access</h1>
+    <p class="subtitle">Direction: O contains A. Heavy overlap. Unified mark.</p>
+    
+    <div class="grid">
+        
+        <!-- 1: O contains A - negative space -->
+        <div class="concept featured">
+            <span class="tag">Core</span>
+            <h2>01 — A Carved Into O</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Large O -->
+                    <circle cx="50" cy="50" r="46" fill="#27272a"/>
+                    <!-- A as negative space -->
+                    <path d="M50 12L22 88H36L50 50L64 88H78L50 12Z" fill="#09090b"/>
+                </svg>
+            </div>
+            <p class="description">Solid O with A carved out as negative space. Single unified form.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 100 100" fill="none">
+                        <circle cx="50" cy="50" r="46" fill="#e4e4e7"/>
+                        <path d="M50 12L22 88H36L50 50L64 88H78L50 12Z" fill="#09090b"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 100 100" fill="none">
+                        <circle cx="50" cy="50" r="46" fill="#18181b"/>
+                        <path d="M50 12L22 88H36L50 50L64 88H78L50 12Z" fill="#fafafa"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2: O contains A - with crossbar -->
+        <div class="concept featured">
+            <span class="tag">With Crossbar</span>
+            <h2>02 — A in O (Traditional A)</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Large O -->
+                    <circle cx="50" cy="50" r="46" fill="#27272a"/>
+                    <!-- A negative space with crossbar -->
+                    <path d="M50 12L22 88H36L42 72H58L64 88H78L50 12Z" fill="#09090b"/>
+                    <path d="M46 60L50 45L54 60H46Z" fill="#27272a"/>
+                </svg>
+            </div>
+            <p class="description">Same but A has traditional crossbar triangle. More recognizable.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 100 100" fill="none">
+                        <circle cx="50" cy="50" r="46" fill="#e4e4e7"/>
+                        <path d="M50 12L22 88H36L42 72H58L64 88H78L50 12Z" fill="#09090b"/>
+                        <path d="M46 60L50 45L54 60H46Z" fill="#e4e4e7"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 100 100" fill="none">
+                        <circle cx="50" cy="50" r="46" fill="#18181b"/>
+                        <path d="M50 12L22 88H36L42 72H58L64 88H78L50 12Z" fill="#fafafa"/>
+                        <path d="M46 60L50 45L54 60H46Z" fill="#18181b"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3: O ring with A inside -->
+        <div class="concept">
+            <h2>03 — O Ring + A Inside</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- O as thick ring -->
+                    <circle cx="50" cy="50" r="46" fill="#27272a"/>
+                    <circle cx="50" cy="50" r="32" fill="#09090b"/>
+                    <!-- A inside the ring space -->
+                    <path d="M50 20L32 80H42L50 55L58 80H68L50 20Z" fill="#27272a"/>
+                </svg>
+            </div>
+            <p class="description">O as ring, A fills the inner space. Both visible but unified.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 100 100" fill="none">
+                        <circle cx="50" cy="50" r="46" fill="#e4e4e7"/>
+                        <circle cx="50" cy="50" r="32" fill="#09090b"/>
+                        <path d="M50 20L32 80H42L50 55L58 80H68L50 20Z" fill="#e4e4e7"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 100 100" fill="none">
+                        <circle cx="50" cy="50" r="46" fill="#18181b"/>
+                        <circle cx="50" cy="50" r="32" fill="#fafafa"/>
+                        <path d="M50 20L32 80H42L50 55L58 80H68L50 20Z" fill="#18181b"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4: A breaks through O -->
+        <div class="concept featured">
+            <span class="tag">Dynamic</span>
+            <h2>04 — A Pierces O</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 100 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- O -->
+                    <circle cx="50" cy="55" r="40" fill="#27272a"/>
+                    <circle cx="50" cy="55" r="24" fill="#09090b"/>
+                    <!-- A breaking through top and bottom -->
+                    <path d="M50 0L25 100H40L50 65L60 100H75L50 0Z" fill="#3f3f46"/>
+                    <!-- A inner cutout -->
+                    <path d="M50 35L42 60H58L50 35Z" fill="#09090b"/>
+                </svg>
+            </div>
+            <p class="description">A pierces through the O, extending beyond. More dynamic.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 100 110" fill="none">
+                        <circle cx="50" cy="55" r="40" fill="#71717a"/>
+                        <circle cx="50" cy="55" r="24" fill="#09090b"/>
+                        <path d="M50 0L25 100H40L50 65L60 100H75L50 0Z" fill="#e4e4e7"/>
+                        <path d="M50 35L42 60H58L50 35Z" fill="#09090b"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 100 110" fill="none">
+                        <circle cx="50" cy="55" r="40" fill="#a1a1aa"/>
+                        <circle cx="50" cy="55" r="24" fill="#fafafa"/>
+                        <path d="M50 0L25 100H40L50 65L60 100H75L50 0Z" fill="#18181b"/>
+                        <path d="M50 35L42 60H58L50 35Z" fill="#fafafa"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5: Faceted O with A cutout -->
+        <div class="concept featured">
+            <span class="tag">Obsidian</span>
+            <h2>05 — Faceted O + A</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Faceted O - left half darker -->
+                    <path d="M50 4 A46 46 0 0 0 50 96 L50 4Z" fill="#18181b"/>
+                    <!-- Faceted O - right half lighter -->
+                    <path d="M50 4 A46 46 0 0 1 50 96 L50 4Z" fill="#27272a"/>
+                    <!-- A cutout -->
+                    <path d="M50 14L24 86H38L50 52L62 86H76L50 14Z" fill="#09090b"/>
+                    <!-- Center line -->
+                    <path d="M50 4V96" stroke="#3f3f46" stroke-width="1"/>
+                </svg>
+            </div>
+            <p class="description">O with obsidian facets (two-tone). A carved through center.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 100 100" fill="none">
+                        <path d="M50 4 A46 46 0 0 0 50 96 L50 4Z" fill="#a1a1aa"/>
+                        <path d="M50 4 A46 46 0 0 1 50 96 L50 4Z" fill="#e4e4e7"/>
+                        <path d="M50 14L24 86H38L50 52L62 86H76L50 14Z" fill="#09090b"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 100 100" fill="none">
+                        <path d="M50 4 A46 46 0 0 0 50 96 L50 4Z" fill="#18181b"/>
+                        <path d="M50 4 A46 46 0 0 1 50 96 L50 4Z" fill="#27272a"/>
+                        <path d="M50 14L24 86H38L50 52L62 86H76L50 14Z" fill="#fafafa"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6: Heavy overlap, both outlined -->
+        <div class="concept">
+            <h2>06 — Outlined Overlap</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- O outline -->
+                    <circle cx="50" cy="50" r="44" stroke="#e4e4e7" stroke-width="6" fill="none"/>
+                    <!-- A outline inside -->
+                    <path d="M50 15L22 85H38L50 52L62 85H78L50 15Z" stroke="#e4e4e7" stroke-width="5" fill="none" stroke-linejoin="miter"/>
+                </svg>
+            </div>
+            <p class="description">Both letters as outlines. A contained within O ring.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 100 100" fill="none">
+                        <circle cx="50" cy="50" r="44" stroke="#e4e4e7" stroke-width="6" fill="none"/>
+                        <path d="M50 15L22 85H38L50 52L62 85H78L50 15Z" stroke="#e4e4e7" stroke-width="5" fill="none" stroke-linejoin="miter"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 100 100" fill="none">
+                        <circle cx="50" cy="50" r="44" stroke="#18181b" stroke-width="6" fill="none"/>
+                        <path d="M50 15L22 85H38L50 52L62 85H78L50 15Z" stroke="#18181b" stroke-width="5" fill="none" stroke-linejoin="miter"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- 7: O with A + slash -->
+        <div class="concept">
+            <h2>07 — O Contains A + Slash</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- O -->
+                    <circle cx="50" cy="50" r="46" fill="#27272a"/>
+                    <!-- A cutout -->
+                    <path d="M50 14L26 86H40L50 55L60 86H74L50 14Z" fill="#09090b"/>
+                    <!-- Slash through -->
+                    <path d="M20 80L80 20" stroke="#09090b" stroke-width="8" stroke-linecap="square"/>
+                    <path d="M22 78L78 22" stroke="#3f3f46" stroke-width="2"/>
+                </svg>
+            </div>
+            <p class="description">Combines O-contains-A with the slash from your first reference.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 100 100" fill="none">
+                        <circle cx="50" cy="50" r="46" fill="#e4e4e7"/>
+                        <path d="M50 14L26 86H40L50 55L60 86H74L50 14Z" fill="#09090b"/>
+                        <path d="M20 80L80 20" stroke="#09090b" stroke-width="8" stroke-linecap="square"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 100 100" fill="none">
+                        <circle cx="50" cy="50" r="46" fill="#18181b"/>
+                        <path d="M50 14L26 86H40L50 55L60 86H74L50 14Z" fill="#fafafa"/>
+                        <path d="M20 80L80 20" stroke="#fafafa" stroke-width="8" stroke-linecap="square"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- 8: Shield-shaped O with A -->
+        <div class="concept featured">
+            <span class="tag">Shield</span>
+            <h2>08 — Shield O Contains A</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 100 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Shield-shaped O -->
+                    <path d="M50 5L8 22V55C8 82 26 102 50 108C74 102 92 82 92 55V22L50 5Z" fill="#27272a"/>
+                    <!-- A carved inside -->
+                    <path d="M50 18L25 90H38L50 55L62 90H75L50 18Z" fill="#09090b"/>
+                </svg>
+            </div>
+            <p class="description">O becomes shield-shaped. A carved within. Security + Access unified.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 100 110" fill="none">
+                        <path d="M50 5L8 22V55C8 82 26 102 50 108C74 102 92 82 92 55V22L50 5Z" fill="#e4e4e7"/>
+                        <path d="M50 18L25 90H38L50 55L62 90H75L50 18Z" fill="#09090b"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 100 110" fill="none">
+                        <path d="M50 5L8 22V55C8 82 26 102 50 108C74 102 92 82 92 55V22L50 5Z" fill="#18181b"/>
+                        <path d="M50 18L25 90H38L50 55L62 90H75L50 18Z" fill="#fafafa"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- 9: Thick O thin A -->
+        <div class="concept">
+            <h2>09 — Heavy O / Light A</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Very thick O ring -->
+                    <circle cx="50" cy="50" r="46" fill="#27272a"/>
+                    <circle cx="50" cy="50" r="26" fill="#09090b"/>
+                    <!-- Thin A inside -->
+                    <path d="M50 22L35 78H42L50 50L58 78H65L50 22Z" stroke="#52525b" stroke-width="3" fill="none"/>
+                </svg>
+            </div>
+            <p class="description">Heavy O presence, lighter A within. O dominates but A is there.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 100 100" fill="none">
+                        <circle cx="50" cy="50" r="46" fill="#e4e4e7"/>
+                        <circle cx="50" cy="50" r="26" fill="#09090b"/>
+                        <path d="M50 22L35 78H42L50 50L58 78H65L50 22Z" stroke="#71717a" stroke-width="3" fill="none"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 100 100" fill="none">
+                        <circle cx="50" cy="50" r="46" fill="#18181b"/>
+                        <circle cx="50" cy="50" r="26" fill="#fafafa"/>
+                        <path d="M50 22L35 78H42L50 50L58 78H65L50 22Z" stroke="#71717a" stroke-width="3" fill="none"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- 10: Minimal O with A notch -->
+        <div class="concept">
+            <h2>10 — O with A Notch</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- O with triangular notch cut from top -->
+                    <path d="M50 4 A46 46 0 1 1 49.99 4 L50 4 L35 45 L50 4 L65 45 L50 4Z" fill="#27272a" fill-rule="evenodd"/>
+                    <!-- Just the A notch visible -->
+                    <path d="M50 4L35 45H65L50 4Z" fill="#09090b"/>
+                </svg>
+            </div>
+            <p class="description">O with A-shaped notch cut from top. Minimal, abstract but reads OA.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 100 100" fill="none">
+                        <circle cx="50" cy="50" r="46" fill="#e4e4e7"/>
+                        <path d="M50 4L32 55H68L50 4Z" fill="#09090b"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 100 100" fill="none">
+                        <circle cx="50" cy="50" r="46" fill="#18181b"/>
+                        <path d="M50 4L32 55H68L50 4Z" fill="#fafafa"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
