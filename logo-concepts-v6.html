@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obsidian Access - OA Logo V6</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #09090b;
+            color: #e4e4e7;
+            min-height: 100vh;
+            padding: 40px;
+        }
+        h1 { 
+            font-size: 14px; 
+            letter-spacing: 0.2em; 
+            text-transform: uppercase;
+            color: #71717a;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 11px;
+            color: #52525b;
+            margin-bottom: 40px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            max-width: 1400px;
+        }
+        .concept {
+            background: #18181b;
+            border: 1px solid #27272a;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .concept.featured {
+            border-color: #52525b;
+            background: linear-gradient(145deg, #1f1f23 0%, #141416 100%);
+        }
+        .concept h2 {
+            font-size: 11px;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: #52525b;
+            margin-bottom: 24px;
+        }
+        .logo-container {
+            width: 150px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .logo-container svg {
+            width: 100%;
+            height: 100%;
+        }
+        .description {
+            font-size: 12px;
+            color: #71717a;
+            text-align: center;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .variants {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+        }
+        .variant {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .variant.dark { background: #09090b; }
+        .variant.light { background: #fafafa; }
+        .variant svg {
+            width: 70px;
+            height: 70px;
+        }
+        .tag {
+            font-size: 9px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #e4e4e7;
+            background: #3f3f46;
+            padding: 4px 10px;
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>OA — Obsidian Access</h1>
+    <p class="subtitle">Direction: Off-center. A in lower right, not fully captured. Dynamic asymmetry.</p>
+    
+    <div class="grid">
+        
+        <!-- 1: A breaking out lower right -->
+        <div class="concept featured">
+            <span class="tag">Core Direction</span>
+            <h2>01 — A Breaks Lower Right</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- O positioned upper left -->
+                    <circle cx="45" cy="45" r="40" fill="#27272a"/>
+                    <circle cx="45" cy="45" r="22" fill="#09090b"/>
+                    <!-- A breaking out to lower right -->
+                    <path d="M70 115L95 45L120 115" stroke="#e4e4e7" stroke-width="7" fill="none" stroke-linejoin="miter"/>
+                    <path d="M78 95H112" stroke="#e4e4e7" stroke-width="5"/>
+                </svg>
+            </div>
+            <p class="description">O upper left, A extends out to lower right. A not contained.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 120 120" fill="none">
+                        <circle cx="45" cy="45" r="40" fill="#e4e4e7"/>
+                        <circle cx="45" cy="45" r="22" fill="#09090b"/>
+                        <path d="M70 115L95 45L120 115" stroke="#e4e4e7" stroke-width="7" fill="none" stroke-linejoin="miter"/>
+                        <path d="M78 95H112" stroke="#e4e4e7" stroke-width="5"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 120 120" fill="none">
+                        <circle cx="45" cy="45" r="40" fill="#18181b"/>
+                        <circle cx="45" cy="45" r="22" fill="#fafafa"/>
+                        <path d="M70 115L95 45L120 115" stroke="#18181b" stroke-width="7" fill="none" stroke-linejoin="miter"/>
+                        <path d="M78 95H112" stroke="#18181b" stroke-width="5"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2: Overlapping, A partially inside -->
+        <div class="concept featured">
+            <span class="tag">Overlap</span>
+            <h2>02 — A Overlaps Out</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- O -->
+                    <circle cx="48" cy="48" r="42" fill="#27272a"/>
+                    <circle cx="48" cy="48" r="24" fill="#09090b"/>
+                    <!-- A - apex inside O, legs extend out -->
+                    <path d="M72 118L90 50L108 118H95L90 100H80L78 108" stroke="#e4e4e7" stroke-width="6" fill="none" stroke-linejoin="miter"/>
+                </svg>
+            </div>
+            <p class="description">A's apex overlaps O, but legs extend outside. Partial capture.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 120 120" fill="none">
+                        <circle cx="48" cy="48" r="42" fill="#e4e4e7"/>
+                        <circle cx="48" cy="48" r="24" fill="#09090b"/>
+                        <path d="M65 118L88 40L111 118" stroke="#71717a" stroke-width="6" fill="none" stroke-linejoin="miter"/>
+                        <path d="M75 92H101" stroke="#71717a" stroke-width="5"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 120 120" fill="none">
+                        <circle cx="48" cy="48" r="42" fill="#18181b"/>
+                        <circle cx="48" cy="48" r="24" fill="#fafafa"/>
+                        <path d="M65 118L88 40L111 118" stroke="#52525b" stroke-width="6" fill="none" stroke-linejoin="miter"/>
+                        <path d="M75 92H101" stroke="#52525b" stroke-width="5"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3: Solid overlap with A cutout extending -->
+        <div class="concept featured">
+            <span class="tag">Unified</span>
+            <h2>03 — A Cuts Through & Out</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- O solid -->
+                    <circle cx="50" cy="50" r="44" fill="#27272a"/>
+                    <!-- A as cutout that extends beyond O -->
+                    <path d="M60 118L88 30L116 118H100L88 82L76 118H60Z" fill="#09090b"/>
+                    <!-- A triangle hole -->
+                    <path d="M82 95L88 75L94 95H82Z" fill="#27272a"/>
+                </svg>
+            </div>
+            <p class="description">A carved through O but continues past the edge. Unified yet breaking free.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 120 120" fill="none">
+                        <circle cx="50" cy="50" r="44" fill="#e4e4e7"/>
+                        <path d="M60 118L88 30L116 118H100L88 82L76 118H60Z" fill="#09090b"/>
+                        <path d="M82 95L88 75L94 95H82Z" fill="#e4e4e7"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 120 120" fill="none">
+                        <circle cx="50" cy="50" r="44" fill="#18181b"/>
+                        <path d="M60 118L88 30L116 118H100L88 82L76 118H60Z" fill="#fafafa"/>
+                        <path d="M82 95L88 75L94 95H82Z" fill="#18181b"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4: O ring, A lower right outlined -->
+        <div class="concept">
+            <h2>04 — O Ring + External A</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- O as ring, upper left -->
+                    <circle cx="42" cy="42" r="38" stroke="#e4e4e7" stroke-width="6" fill="none"/>
+                    <!-- A lower right, mostly outside -->
+                    <path d="M68 115L92 40L116 115" stroke="#e4e4e7" stroke-width="6" fill="none" stroke-linejoin="miter"/>
+                    <path d="M76 90H108" stroke="#e4e4e7" stroke-width="5"/>
+                </svg>
+            </div>
+            <p class="description">Both outlined. O upper left, A lower right. Minimal overlap.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 120 120" fill="none">
+                        <circle cx="42" cy="42" r="38" stroke="#e4e4e7" stroke-width="6" fill="none"/>
+                        <path d="M68 115L92 40L116 115" stroke="#e4e4e7" stroke-width="6" fill="none" stroke-linejoin="miter"/>
+                        <path d="M76 90H108" stroke="#e4e4e7" stroke-width="5"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 120 120" fill="none">
+                        <circle cx="42" cy="42" r="38" stroke="#18181b" stroke-width="6" fill="none"/>
+                        <path d="M68 115L92 40L116 115" stroke="#18181b" stroke-width="6" fill="none" stroke-linejoin="miter"/>
+                        <path d="M76 90H108" stroke="#18181b" stroke-width="5"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5: Solid heavy, off-center -->
+        <div class="concept featured">
+            <span class="tag">Heavy</span>
+            <h2>05 — Heavy Off-Center</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Heavy O -->
+                    <circle cx="45" cy="45" r="42" fill="#e4e4e7"/>
+                    <circle cx="45" cy="45" r="20" fill="#09090b"/>
+                    <!-- Heavy A lower right -->
+                    <path d="M62 118L90 35L118 118H100L94 98H86L80 118H62Z" fill="#e4e4e7"/>
+                    <path d="M87 82L90 68L93 82H87Z" fill="#09090b"/>
+                </svg>
+            </div>
+            <p class="description">Maximum weight. Bold overlap with A breaking out bottom right.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 120 120" fill="none">
+                        <circle cx="45" cy="45" r="42" fill="#e4e4e7"/>
+                        <circle cx="45" cy="45" r="20" fill="#09090b"/>
+                        <path d="M62 118L90 35L118 118H100L94 98H86L80 118H62Z" fill="#e4e4e7"/>
+                        <path d="M87 82L90 68L93 82H87Z" fill="#09090b"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 120 120" fill="none">
+                        <circle cx="45" cy="45" r="42" fill="#18181b"/>
+                        <circle cx="45" cy="45" r="20" fill="#fafafa"/>
+                        <path d="M62 118L90 35L118 118H100L94 98H86L80 118H62Z" fill="#18181b"/>
+                        <path d="M87 82L90 68L93 82H87Z" fill="#fafafa"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6: A apex just touching O edge -->
+        <div class="concept">
+            <h2>06 — A Touching Edge</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- O -->
+                    <circle cx="45" cy="50" r="40" fill="#27272a"/>
+                    <circle cx="45" cy="50" r="22" fill="#09090b"/>
+                    <!-- A - apex just touches O edge -->
+                    <path d="M75 115L95 55L115 115" stroke="#e4e4e7" stroke-width="6" fill="none" stroke-linejoin="miter"/>
+                    <path d="M82 95H108" stroke="#e4e4e7" stroke-width="5"/>
+                </svg>
+            </div>
+            <p class="description">A positioned so apex just kisses the O edge. Tangent connection.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 120 120" fill="none">
+                        <circle cx="45" cy="50" r="40" fill="#e4e4e7"/>
+                        <circle cx="45" cy="50" r="22" fill="#09090b"/>
+                        <path d="M75 115L95 55L115 115" stroke="#e4e4e7" stroke-width="6" fill="none" stroke-linejoin="miter"/>
+                        <path d="M82 95H108" stroke="#e4e4e7" stroke-width="5"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 120 120" fill="none">
+                        <circle cx="45" cy="50" r="40" fill="#18181b"/>
+                        <circle cx="45" cy="50" r="22" fill="#fafafa"/>
+                        <path d="M75 115L95 55L115 115" stroke="#18181b" stroke-width="6" fill="none" stroke-linejoin="miter"/>
+                        <path d="M82 95H108" stroke="#18181b" stroke-width="5"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- 7: Faceted O with A breaking out -->
+        <div class="concept featured">
+            <span class="tag">Obsidian</span>
+            <h2>07 — Faceted + Breakout</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Faceted O -->
+                    <path d="M45 6 A40 40 0 0 0 45 86 L45 6Z" fill="#18181b"/>
+                    <path d="M45 6 A40 40 0 0 1 45 86 L45 6Z" fill="#27272a"/>
+                    <circle cx="45" cy="46" r="20" fill="#09090b"/>
+                    <!-- A extending out lower right -->
+                    <path d="M65 118L90 40L115 118" stroke="#3f3f46" stroke-width="6" fill="none" stroke-linejoin="miter"/>
+                    <path d="M73 95H107" stroke="#3f3f46" stroke-width="5"/>
+                </svg>
+            </div>
+            <p class="description">Faceted obsidian O with A breaking out. Multi-tonal.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 120 120" fill="none">
+                        <path d="M45 6 A40 40 0 0 0 45 86 L45 6Z" fill="#a1a1aa"/>
+                        <path d="M45 6 A40 40 0 0 1 45 86 L45 6Z" fill="#e4e4e7"/>
+                        <circle cx="45" cy="46" r="20" fill="#09090b"/>
+                        <path d="M65 118L90 40L115 118" stroke="#e4e4e7" stroke-width="6" fill="none" stroke-linejoin="miter"/>
+                        <path d="M73 95H107" stroke="#e4e4e7" stroke-width="5"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 120 120" fill="none">
+                        <path d="M45 6 A40 40 0 0 0 45 86 L45 6Z" fill="#18181b"/>
+                        <path d="M45 6 A40 40 0 0 1 45 86 L45 6Z" fill="#27272a"/>
+                        <circle cx="45" cy="46" r="20" fill="#fafafa"/>
+                        <path d="M65 118L90 40L115 118" stroke="#27272a" stroke-width="6" fill="none" stroke-linejoin="miter"/>
+                        <path d="M73 95H107" stroke="#27272a" stroke-width="5"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- 8: No crossbar A, off center -->
+        <div class="concept">
+            <h2>08 — Open A Breakout</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- O -->
+                    <circle cx="44" cy="44" r="40" stroke="#e4e4e7" stroke-width="6" fill="none"/>
+                    <!-- A without crossbar - cleaner peak -->
+                    <path d="M70 115L95 40L120 115" stroke="#e4e4e7" stroke-width="7" fill="none" stroke-linejoin="miter"/>
+                </svg>
+            </div>
+            <p class="description">A without crossbar. Cleaner, more like a peak or tent. Off-center.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 120 120" fill="none">
+                        <circle cx="44" cy="44" r="40" stroke="#e4e4e7" stroke-width="6" fill="none"/>
+                        <path d="M70 115L95 40L120 115" stroke="#e4e4e7" stroke-width="7" fill="none" stroke-linejoin="miter"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 120 120" fill="none">
+                        <circle cx="44" cy="44" r="40" stroke="#18181b" stroke-width="6" fill="none"/>
+                        <path d="M70 115L95 40L120 115" stroke="#18181b" stroke-width="7" fill="none" stroke-linejoin="miter"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- 9: A partially eclipsing O -->
+        <div class="concept">
+            <h2>09 — A Eclipses O</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- O behind -->
+                    <circle cx="42" cy="48" r="38" fill="#3f3f46"/>
+                    <circle cx="42" cy="48" r="20" fill="#09090b"/>
+                    <!-- Solid A in front, partially covering O -->
+                    <path d="M55 118L88 25L120 118H102L95 95H81L74 118H55Z" fill="#27272a"/>
+                    <path d="M84 78L88 60L92 78H84Z" fill="#09090b"/>
+                </svg>
+            </div>
+            <p class="description">A passes in front of O, partially eclipsing it. Depth and overlap.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 120 120" fill="none">
+                        <circle cx="42" cy="48" r="38" fill="#71717a"/>
+                        <circle cx="42" cy="48" r="20" fill="#09090b"/>
+                        <path d="M55 118L88 25L120 118H102L95 95H81L74 118H55Z" fill="#e4e4e7"/>
+                        <path d="M84 78L88 60L92 78H84Z" fill="#09090b"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 120 120" fill="none">
+                        <circle cx="42" cy="48" r="38" fill="#a1a1aa"/>
+                        <circle cx="42" cy="48" r="20" fill="#fafafa"/>
+                        <path d="M55 118L88 25L120 118H102L95 95H81L74 118H55Z" fill="#18181b"/>
+                        <path d="M84 78L88 60L92 78H84Z" fill="#fafafa"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- 10: Connected but distinct -->
+        <div class="concept featured">
+            <span class="tag">Connected</span>
+            <h2>10 — Linked OA</h2>
+            <div class="logo-container">
+                <svg viewBox="0 0 120 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- O -->
+                    <circle cx="40" cy="40" r="36" stroke="#e4e4e7" stroke-width="6" fill="none"/>
+                    <!-- A with left leg connecting to O -->
+                    <path d="M60 108L88 28L116 108" stroke="#e4e4e7" stroke-width="6" fill="none" stroke-linejoin="miter"/>
+                    <path d="M68 85H108" stroke="#e4e4e7" stroke-width="5"/>
+                    <!-- Connection point emphasized -->
+                    <circle cx="60" cy="65" r="4" fill="#e4e4e7"/>
+                </svg>
+            </div>
+            <p class="description">A's left leg connects to O. Linked but both letters clearly distinct.</p>
+            <div class="variants">
+                <div class="variant dark">
+                    <svg viewBox="0 0 120 110" fill="none">
+                        <circle cx="40" cy="40" r="36" stroke="#e4e4e7" stroke-width="6" fill="none"/>
+                        <path d="M60 108L88 28L116 108" stroke="#e4e4e7" stroke-width="6" fill="none" stroke-linejoin="miter"/>
+                        <path d="M68 85H108" stroke="#e4e4e7" stroke-width="5"/>
+                    </svg>
+                </div>
+                <div class="variant light">
+                    <svg viewBox="0 0 120 110" fill="none">
+                        <circle cx="40" cy="40" r="36" stroke="#18181b" stroke-width="6" fill="none"/>
+                        <path d="M60 108L88 28L116 108" stroke="#18181b" stroke-width="6" fill="none" stroke-linejoin="miter"/>
+                        <path d="M68 85H108" stroke="#18181b" stroke-width="5"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
