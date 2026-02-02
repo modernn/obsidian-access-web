@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obsidian Access | Premium Security Systems</title>
+    <meta name="description" content="Professional UniFi security systems for Mat-Su Valley businesses. Access control, surveillance, and smart integrations designed by a software engineer.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: {
+                            50: '#f4f4f5',
+                            100: '#e4e4e7',
+                            200: '#d4d4d8',
+                            300: '#a1a1aa',
+                            400: '#71717a',
+                            500: '#52525b',
+                            600: '#3f3f46',
+                            700: '#27272a',
+                            800: '#18181b',
+                            900: '#09090b',
+                            950: '#030303'
+                        },
+                        accent: {
+                            400: '#a78bfa',
+                            500: '#8b5cf6',
+                            600: '#7c3aed'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass { 
+            background: rgba(39, 39, 42, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(113, 113, 122, 0.2);
+        }
+        .obsidian-gradient {
+            background: linear-gradient(135deg, #18181b 0%, #27272a 50%, #1a1a1f 100%);
+        }
+        .glow-accent {
+            box-shadow: 0 0 40px rgba(139, 92, 246, 0.15);
+        }
+        .quote-card {
+            background: linear-gradient(145deg, rgba(39, 39, 42, 0.9), rgba(24, 24, 27, 0.95));
+        }
+    </style>
+</head>
+<body class="bg-obsidian-950 text-obsidian-100 antialiased">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-accent-500 rounded-lg flex items-center justify-center">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                        </svg>
+                    </div>
+                    <span class="text-lg font-semibold text-white">Obsidian Access</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-obsidian-300 hover:text-white transition">Services</a>
+                    <a href="#quote" class="text-obsidian-300 hover:text-white transition">Get Quote</a>
+                    <a href="#about" class="text-obsidian-300 hover:text-white transition">About</a>
+                    <a href="#contact" class="bg-accent-500 hover:bg-accent-600 text-white px-4 py-2 rounded-lg transition">Contact</a>
+                </div>
+                <button class="md:hidden text-obsidian-300" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden bg-obsidian-900/95 backdrop-blur" id="mobile-menu">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="#services" class="block py-2 text-obsidian-300 hover:text-white">Services</a>
+                <a href="#quote" class="block py-2 text-obsidian-300 hover:text-white">Get Quote</a>
+                <a href="#about" class="block py-2 text-obsidian-300 hover:text-white">About</a>
+                <a href="#contact" class="block py-2 text-accent-400 hover:text-accent-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center obsidian-gradient overflow-hidden">
+        <!-- Subtle grid pattern -->
+        <div class="absolute inset-0 opacity-5" style="background-image: linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px); background-size: 50px 50px;"></div>
+        
+        <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
+            <div class="text-center max-w-3xl mx-auto">
+                <p class="text-accent-400 font-medium mb-4 tracking-wide uppercase text-sm">Mat-Su Valley, Alaska</p>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                    Security Systems<br>
+                    <span class="text-accent-400">Designed Right</span>
+                </h1>
+                <p class="text-xl text-obsidian-300 mb-8 leading-relaxed">
+                    Professional access control and surveillance systems. Engineered by a software developer. No subscription fees. Actually integrates with your business.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#quote" class="bg-accent-500 hover:bg-accent-600 text-white px-8 py-4 rounded-lg font-medium transition transform hover:scale-105 shadow-lg">
+                        Get Instant Quote
+                    </a>
+                    <a href="#services" class="glass hover:bg-obsidian-700/50 text-white px-8 py-4 rounded-lg font-medium transition">
+                        View Services
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-obsidian-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Problem/Solution Section -->
+    <section class="py-20 bg-obsidian-900">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-white mb-6">Your Business Deserves Better Than Ring Doorbells</h2>
+                    <p class="text-obsidian-300 mb-6">
+                        Most security companies install whatever's cheapest and collect monthly monitoring fees forever. You get grainy footage, apps that don't work, and zero integration with how your business actually runs.
+                    </p>
+                    <p class="text-obsidian-300">
+                        We do it differently. UniFi systems with <span class="text-accent-400 font-medium">zero subscription fees</span>. Crystal-clear 4K footage you own. Badge access that syncs with your employee database. Systems designed by someone who actually understands software.
+                    </p>
+                </div>
+                <div class="glass rounded-2xl p-8 glow-accent">
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-accent-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-5 h-5 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-white font-medium">No Monthly Fees</h3>
+                                <p class="text-obsidian-400 text-sm">You own the hardware and footage. No cloud subscriptions.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-accent-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-5 h-5 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-white font-medium">Real Integration</h3>
+                                <p class="text-obsidian-400 text-sm">Access control that talks to your payroll, HR, and automation.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-accent-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-5 h-5 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-white font-medium">4K Everything</h3>
+                                <p class="text-obsidian-400 text-sm">Actually see faces and plates, not pixelated blobs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 obsidian-gradient">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">What We Install</h2>
+                <p class="text-obsidian-300 max-w-2xl mx-auto">Professional-grade UniFi systems for businesses that take security seriously.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Access Control -->
+                <div class="glass rounded-2xl p-8 hover:border-accent-500/50 transition group">
+                    <div class="w-14 h-14 bg-accent-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-accent-500/30 transition">
+                        <svg class="w-7 h-7 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Access Control</h3>
+                    <p class="text-obsidian-400 mb-4">Badge readers, smart locks, and door controllers. Know who's entering your building and when.</p>
+                    <ul class="space-y-2 text-sm text-obsidian-300">
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-accent-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            <span>UniFi Access readers & hubs</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-accent-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            <span>Magnetic & electric strikes</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-accent-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            <span>Time tracking integration</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Video Surveillance -->
+                <div class="glass rounded-2xl p-8 hover:border-accent-500/50 transition group">
+                    <div class="w-14 h-14 bg-accent-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-accent-500/30 transition">
+                        <svg class="w-7 h-7 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Video Surveillance</h3>
+                    <p class="text-obsidian-400 mb-4">4K cameras with AI detection. See everything in crystal clarity. Footage stored on-site, owned by you.</p>
+                    <ul class="space-y-2 text-sm text-obsidian-300">
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-accent-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            <span>4K indoor/outdoor cameras</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-accent-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            <span>Smart motion detection</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-accent-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            <span>No cloud subscription</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Network Infrastructure -->
+                <div class="glass rounded-2xl p-8 hover:border-accent-500/50 transition group">
+                    <div class="w-14 h-14 bg-accent-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-accent-500/30 transition">
+                        <svg class="w-7 h-7 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Network Infrastructure</h3>
+                    <p class="text-obsidian-400 mb-4">Secure, properly segmented networks. Your cameras and access control on isolated VLANs.</p>
+                    <ul class="space-y-2 text-sm text-obsidian-300">
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-accent-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            <span>UniFi Dream Machine Pro</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-accent-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            <span>PoE switches</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-accent-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            <span>WiFi 6 coverage</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Calculator Section -->
+    <section id="quote" class="py-20 bg-obsidian-900">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Get an Instant Estimate</h2>
+                <p class="text-obsidian-300">Configure your system and see real pricing. No surprises.</p>
+            </div>
+            
+            <div class="quote-card rounded-2xl p-8 border border-obsidian-700 glow-accent">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Left: Inputs -->
+                    <div class="space-y-6">
+                        <h3 class="text-lg font-semibold text-white mb-4">Configure Your System</h3>
+                        
+                        <!-- Doors -->
+                        <div>
+                            <label class="block text-obsidian-200 mb-2 text-sm font-medium">Access Control Doors</label>
+                            <div class="flex items-center space-x-4">
+                                <button onclick="adjustDoors(-1)" class="w-10 h-10 rounded-lg bg-obsidian-700 hover:bg-obsidian-600 text-white flex items-center justify-center transition">−</button>
+                                <span id="door-count" class="text-2xl font-bold text-white w-12 text-center">2</span>
+                                <button onclick="adjustDoors(1)" class="w-10 h-10 rounded-lg bg-obsidian-700 hover:bg-obsidian-600 text-white flex items-center justify-center transition">+</button>
+                            </div>
+                            <p class="text-obsidian-500 text-xs mt-1">Badge readers + door hardware per entrance</p>
+                        </div>
+
+                        <!-- Cameras -->
+                        <div>
+                            <label class="block text-obsidian-200 mb-2 text-sm font-medium">Security Cameras</label>
+                            <div class="flex items-center space-x-4">
+                                <button onclick="adjustCameras(-1)" class="w-10 h-10 rounded-lg bg-obsidian-700 hover:bg-obsidian-600 text-white flex items-center justify-center transition">−</button>
+                                <span id="camera-count" class="text-2xl font-bold text-white w-12 text-center">4</span>
+                                <button onclick="adjustCameras(1)" class="w-10 h-10 rounded-lg bg-obsidian-700 hover:bg-obsidian-600 text-white flex items-center justify-center transition">+</button>
+                            </div>
+                            <p class="text-obsidian-500 text-xs mt-1">4K cameras with on-site storage</p>
+                        </div>
+
+                        <!-- Complexity -->
+                        <div>
+                            <label class="block text-obsidian-200 mb-2 text-sm font-medium">Installation Complexity</label>
+                            <div class="grid grid-cols-3 gap-2">
+                                <button onclick="setComplexity('simple')" id="btn-simple" class="complexity-btn py-2 px-3 rounded-lg bg-obsidian-700 hover:bg-obsidian-600 text-obsidian-300 text-sm transition">Simple</button>
+                                <button onclick="setComplexity('standard')" id="btn-standard" class="complexity-btn py-2 px-3 rounded-lg bg-accent-500 text-white text-sm transition">Standard</button>
+                                <button onclick="setComplexity('complex')" id="btn-complex" class="complexity-btn py-2 px-3 rounded-lg bg-obsidian-700 hover:bg-obsidian-600 text-obsidian-300 text-sm transition">Complex</button>
+                            </div>
+                            <p class="text-obsidian-500 text-xs mt-1" id="complexity-desc">New construction or existing wiring available</p>
+                        </div>
+
+                        <!-- Network -->
+                        <div>
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" id="include-network" onchange="updateQuote()" class="w-5 h-5 rounded bg-obsidian-700 border-obsidian-600 text-accent-500 focus:ring-accent-500">
+                                <span class="text-obsidian-200">Include network infrastructure</span>
+                            </label>
+                            <p class="text-obsidian-500 text-xs mt-1 ml-8">Dream Machine Pro + PoE switch</p>
+                        </div>
+                    </div>
+
+                    <!-- Right: Quote Output -->
+                    <div class="bg-obsidian-800/50 rounded-xl p-6 border border-obsidian-700">
+                        <h3 class="text-lg font-semibold text-white mb-6">Estimated Investment</h3>
+                        
+                        <div class="space-y-4 mb-6">
+                            <div class="flex justify-between items-center">
+                                <span class="text-obsidian-300">Equipment</span>
+                                <span class="text-white font-medium" id="equipment-cost">$3,200</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-obsidian-300">Installation</span>
+                                <span class="text-white font-medium" id="labor-cost">$2,100</span>
+                            </div>
+                            <div class="border-t border-obsidian-700 pt-4 flex justify-between items-center">
+                                <span class="text-white font-semibold">Total</span>
+                                <span class="text-2xl font-bold text-accent-400" id="total-cost">$5,300</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-obsidian-900/50 rounded-lg p-4 mb-6">
+                            <p class="text-obsidian-400 text-sm">
+                                <span class="text-accent-400 font-medium">50% deposit</span> to begin, balance on completion. No recurring fees — ever.
+                            </p>
+                        </div>
+
+                        <a href="#contact" class="block w-full bg-accent-500 hover:bg-accent-600 text-white text-center py-3 rounded-lg font-medium transition">
+                            Request Full Proposal
+                        </a>
+                        
+                        <p class="text-obsidian-500 text-xs text-center mt-4">
+                            Estimates for typical installations. Final quote after site survey.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration Section -->
+    <section class="py-20 obsidian-gradient">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Beyond Just Hardware</h2>
+                <p class="text-obsidian-300 max-w-2xl mx-auto">Access control that actually integrates with your business systems.</p>
+            </div>
+            
+            <div class="glass rounded-2xl p-8 max-w-3xl mx-auto">
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 bg-green-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-medium">Time Tracking</h3>
+                            <p class="text-obsidian-400 text-sm">Badge in/out syncs to your payroll system</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-medium">HR Sync</h3>
+                            <p class="text-obsidian-400 text-sm">Auto-provision badges from employee database</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 bg-yellow-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <svg class="w-5 h-5 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-medium">Analytics</h3>
+                            <p class="text-obsidian-400 text-sm">Door logs, traffic patterns, security dashboards</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <svg class="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-medium">Automation</h3>
+                            <p class="text-obsidian-400 text-sm">Lights, HVAC triggers on entry/exit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 pt-6 border-t border-obsidian-700 text-center">
+                    <p class="text-obsidian-300">
+                        <span class="text-accent-400 font-semibold">Coming soon:</span> Time tracking SaaS — badge in/out that syncs directly to Gusto, QuickBooks Time, and more.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-obsidian-900">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-white mb-6">Security Systems Designed by a Software Engineer</h2>
+                    <p class="text-obsidian-300 mb-4">
+                        Most security installers are cable guys who learned to mount cameras. They can't help you when you want your access control to talk to your payroll system, or when you need a custom dashboard for your front desk.
+                    </p>
+                    <p class="text-obsidian-300 mb-4">
+                        I'm a software developer who knows the UniFi ecosystem inside and out. I handle the system design, configuration, and integration — the high-value knowledge work. Physical installation is handled by licensed professionals who do that every day.
+                    </p>
+                    <p class="text-obsidian-300">
+                        The result? Systems that actually work together, documentation you can understand, and an expert who speaks both hardware and software.
+                    </p>
+                </div>
+                <div class="glass rounded-2xl p-8">
+                    <h3 class="text-lg font-semibold text-white mb-6">What You Get</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-accent-400 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            <span class="text-obsidian-200">Site survey and system design</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-accent-400 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            <span class="text-obsidian-200">Professional installation</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-accent-400 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            <span class="text-obsidian-200">Complete software configuration</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-accent-400 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            <span class="text-obsidian-200">User/badge setup and training</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-accent-400 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            <span class="text-obsidian-200">Full system documentation</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-accent-400 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            <span class="text-obsidian-200">Ongoing support available</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 obsidian-gradient">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Let's Talk Security</h2>
+                <p class="text-obsidian-300">Schedule a free consultation or site survey.</p>
+            </div>
+            
+            <div class="glass rounded-2xl p-8 max-w-xl mx-auto glow-accent">
+                <form class="space-y-6" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div>
+                        <label class="block text-obsidian-200 mb-2 text-sm font-medium">Name</label>
+                        <input type="text" name="name" required class="w-full bg-obsidian-800 border border-obsidian-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent-500 transition">
+                    </div>
+                    <div>
+                        <label class="block text-obsidian-200 mb-2 text-sm font-medium">Email</label>
+                        <input type="email" name="email" required class="w-full bg-obsidian-800 border border-obsidian-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent-500 transition">
+                    </div>
+                    <div>
+                        <label class="block text-obsidian-200 mb-2 text-sm font-medium">Phone</label>
+                        <input type="tel" name="phone" class="w-full bg-obsidian-800 border border-obsidian-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent-500 transition">
+                    </div>
+                    <div>
+                        <label class="block text-obsidian-200 mb-2 text-sm font-medium">Tell us about your project</label>
+                        <textarea name="message" rows="4" class="w-full bg-obsidian-800 border border-obsidian-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent-500 transition resize-none"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-accent-500 hover:bg-accent-600 text-white py-4 rounded-lg font-medium transition transform hover:scale-[1.02]">
+                        Request Consultation
+                    </button>
+                </form>
+                
+                <div class="mt-8 pt-6 border-t border-obsidian-700 text-center">
+                    <p class="text-obsidian-400 text-sm mb-2">Or reach us directly:</p>
+                    <p class="text-white">
+                        <a href="mailto:contact@obsidianaccess.com" class="hover:text-accent-400 transition">contact@obsidianaccess.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-obsidian-950 py-12 border-t border-obsidian-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                    <div class="w-8 h-8 bg-accent-500 rounded-lg flex items-center justify-center">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                        </svg>
+                    </div>
+                    <span class="text-white font-semibold">Obsidian Access</span>
+                </div>
+                <div class="text-obsidian-500 text-sm">
+                    © 2026 Obsidian Access, LLC · Mat-Su Valley, Alaska
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quote Calculator JavaScript -->
+    <script>
+        // Pricing from catalog (simplified for web)
+        const pricing = {
+            // Per door: Hub + Reader + Lock + Accessories
+            doorEquipment: {
+                simple: 650,   // Basic setup
+                standard: 850, // Standard reader + mag lock
+                complex: 1100  // Pro reader + heavy duty
+            },
+            // Per camera: Camera + NVR share
+            cameraEquipment: {
+                simple: 250,
+                standard: 350,
+                complex: 500
+            },
+            // Network package
+            networkPackage: 1200,
+            // Labor per hour
+            laborRate: 150,
+            // Hours per door
+            doorLabor: {
+                simple: 1.5,
+                standard: 2.5,
+                complex: 4.0
+            },
+            // Hours per camera
+            cameraLabor: {
+                simple: 0.75,
+                standard: 1.5,
+                complex: 2.5
+            },
+            // Base network labor
+            networkLabor: 3,
+            // Markup
+            markup: 1.20
+        };
+
+        let doors = 2;
+        let cameras = 4;
+        let complexity = 'standard';
+        
+        function adjustDoors(delta) {
+            doors = Math.max(0, Math.min(20, doors + delta));
+            document.getElementById('door-count').textContent = doors;
+            updateQuote();
+        }
+        
+        function adjustCameras(delta) {
+            cameras = Math.max(0, Math.min(30, cameras + delta));
+            document.getElementById('camera-count').textContent = cameras;
+            updateQuote();
+        }
+        
+        function setComplexity(level) {
+            complexity = level;
+            document.querySelectorAll('.complexity-btn').forEach(btn => {
+                btn.classList.remove('bg-accent-500', 'text-white');
+                btn.classList.add('bg-obsidian-700', 'text-obsidian-300');
+            });
+            document.getElementById('btn-' + level).classList.remove('bg-obsidian-700', 'text-obsidian-300');
+            document.getElementById('btn-' + level).classList.add('bg-accent-500', 'text-white');
+            
+            const descriptions = {
+                simple: 'Existing wiring, straightforward installation',
+                standard: 'New construction or existing wiring available',
+                complex: 'Difficult runs, multiple floors, or retrofit'
+            };
+            document.getElementById('complexity-desc').textContent = descriptions[level];
+            updateQuote();
+        }
+        
+        function updateQuote() {
+            const includeNetwork = document.getElementById('include-network').checked;
+            
+            // Equipment
+            let equipment = 0;
+            if (doors > 0) {
+                equipment += doors * pricing.doorEquipment[complexity];
+                // Add one hub for every 4 doors
+                equipment += Math.ceil(doors / 4) * 299;
+            }
+            if (cameras > 0) {
+                equipment += cameras * pricing.cameraEquipment[complexity];
+                // Add NVR if cameras > 0
+                equipment += 299;
+                // Add storage
+                equipment += cameras <= 8 ? 99 : 179;
+            }
+            if (includeNetwork) {
+                equipment += pricing.networkPackage;
+            }
+            equipment = Math.round(equipment * pricing.markup);
+            
+            // Labor
+            let laborHours = 0;
+            if (doors > 0) {
+                laborHours += doors * pricing.doorLabor[complexity];
+                laborHours += 2; // Base setup/config
+            }
+            if (cameras > 0) {
+                laborHours += cameras * pricing.cameraLabor[complexity];
+                laborHours += 1.5; // NVR setup
+            }
+            if (includeNetwork) {
+                laborHours += pricing.networkLabor;
+            }
+            const labor = Math.round(laborHours * pricing.laborRate);
+            
+            // Total
+            const total = equipment + labor;
+            
+            // Update display
+            document.getElementById('equipment-cost').textContent = '$' + equipment.toLocaleString();
+            document.getElementById('labor-cost').textContent = '$' + labor.toLocaleString();
+            document.getElementById('total-cost').textContent = '$' + total.toLocaleString();
+        }
+        
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        
+        // Initial calculation
+        updateQuote();
+    </script>
+</body>
+</html>
